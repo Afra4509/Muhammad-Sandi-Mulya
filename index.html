@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Muhammad Sandi Mulia — Super Neubrutalism Portfolio" />
+  <title>M. Sandi Mulia | Creative Portfolio</title>
+
+  <!-- Google Fonts — Space Grotesk & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Space+Grotesk:wght@500;700;900&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-outline" id="cursor-outline"></div>
+
+  <!-- Interactive Background Pattern -->
+  <div class="bg-pattern" id="bg-pattern"></div>
+
+  <!-- Floating Floating Badges (Desktop) -->
+  <div class="floating-element float-1"><i class="fa-solid fa-code"></i></div>
+  <div class="floating-element float-2"><i class="fa-solid fa-bolt"></i></div>
+  <div class="floating-element float-3"><i class="fa-solid fa-star"></i></div>
+
+  <!-- Magic Theme Switcher -->
+  <button id="theme-btn" class="theme-switcher group-hover" aria-label="Ganti Tema">
+    <i class="fa-solid fa-wand-magic-sparkles"></i> 
+    <span class="tooltip">Klik untuk ganti warna!</span>
+  </button>
+
+  <main class="main-container stagger-container">
+    <!-- Header: Photo & Title -->
+    <header class="hero stagger-item">
+      <div class="polaroid-wrapper">
+        <div class="polaroid">
+          <div class="tape tape-top-left"></div>
+          <div class="tape tape-bottom-right"></div>
+          <img src="sandi.png" alt="Sandi Mulia" />
+          <div class="polaroid-caption">ITS ME!</div>
+        </div>
+        <div class="spin-badge">
+          <svg viewBox="0 0 100 100" width="100" height="100">
+            <defs>
+              <path id="circle" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" />
+            </defs>
+            <text font-size="14" font-weight="bold" fill="#000" letter-spacing="3">
+              <textPath href="#circle">
+                CREATIVE STUDENT • FRONTEND DEV •
+              </textPath>
+            </text>
+          </svg>
+        </div>
+      </div>
+
+      <div class="hero-info">
+        <div class="badge-row">
+          <span class="pill pill-yellow">Mahasiswa</span>
+          <span class="pill pill-blue">Tech Enthusiast</span>
+        </div>
+        <h1 class="glitch-title" data-text="M. Sandi Mulia">M. Sandi Mulia</h1>
+        <p class="hero-desc">Suka ngoding, bereksperimen, dan menembus batas kreativitas. Selamat datang di dunia saya!</p>
+      </div>
+    </header>
+
+    <div class="thick-divider stagger-item"></div>
+
+    <!-- Skills Marquee -->
+    <section class="skills-section stagger-item">
+      <div class="marquee-box">
+        <div class="marquee-content" id="skills-marquee">
+          <span><i class="fa-brands fa-html5"></i> HTML5</span>
+          <span><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+          <span><i class="fa-brands fa-js"></i> JavaScript</span>
+          <span><i class="fa-solid fa-pen-nib"></i> UI/UX Design</span>
+          <span><i class="fa-solid fa-cubes"></i> Neubrutalism</span>
+          <!-- Duplicate for smooth scroll -->
+          <span><i class="fa-brands fa-html5"></i> HTML5</span>
+          <span><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+          <span><i class="fa-brands fa-js"></i> JavaScript</span>
+          <span><i class="fa-solid fa-pen-nib"></i> UI/UX Design</span>
+          <span><i class="fa-solid fa-cubes"></i> Neubrutalism</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education-section stagger-item">
+      <h2 class="block-title"><i class="fa-solid fa-graduation-cap"></i> Perjalanan</h2>
+      
+      <div class="edu-grid">
+        <div class="edu-card card-yellow group-hover">
+          <div class="edu-img-wrap">
+            <img src="unesa.png" alt="UNESA" />
+          </div>
+          <div class="edu-text">
+            <h3>Universitas Negeri Surabaya</h3>
+            <p>Mahasiswa Aktif</p>
+          </div>
+          <i class="fa-solid fa-arrow-right edu-icon"></i>
+        </div>
+
+        <div class="edu-card card-pink group-hover">
+          <div class="edu-img-wrap">
+            <img src="smanike.png" alt="SMAN 1 Kejayan" />
+          </div>
+          <div class="edu-text">
+            <h3>SMAN 1 Kejayan</h3>
+            <p>Alumni</p>
+          </div>
+          <i class="fa-solid fa-check-double edu-icon"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Links -->
+    <section class="social-section stagger-item">
+      <h2 class="block-title"><i class="fa-solid fa-link"></i> Koneksi</h2>
+      <div class="btn-grid">
+        <a href="https://www.instagram.com/sandi_navy/" target="_blank" class="super-btn btn-insta group-hover">
+          <i class="fa-brands fa-instagram"></i>
+          <span>Instagram</span>
+        </a>
+        <a href="#" class="super-btn btn-github group-hover" onclick="alert('Link GitHub segera hadir!')">
+          <i class="fa-brands fa-github"></i>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Legendary Footer Quote -->
+    <footer class="footer stagger-item">
+      <div class="quote-box">
+        <div class="quote-marquee">
+          <span>"di hina hina saya diam, di caci caci saya diam, tapi ketika saya masuk unesa saya akan lawan"</span>
+          <span class="spacer">🔥</span>
+          <span>"di hina hina saya diam, di caci caci saya diam, tapi ketika saya masuk unesa saya akan lawan"</span>
+          <span class="spacer">🔥</span>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
